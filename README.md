@@ -1,4 +1,4 @@
-#  Personal Blog – React Components & Props Lab
+# Personal Blog – React Components & Props Lab
 
 A simple personal blog built with **React + Vite** to practice component-based architecture, props passing, default props, list rendering, styling, and testing.
 
@@ -6,7 +6,7 @@ A simple personal blog built with **React + Vite** to practice component-based a
 
 ## Features
 
-- Blog header with dynamic title
+- Component-based architecture
 - About section with image + description
 - Article list rendered from data
 - Reusable Article components
@@ -16,33 +16,7 @@ A simple personal blog built with **React + Vite** to practice component-based a
 
 ---
 
-## Project Structure
-react-components-props-vite-lab/
-├── public/
-│ └── index.html
-├── src/
-│ ├── components/
-│ │ ├── App.jsx
-│ │ ├── Header.jsx
-│ │ ├── About.jsx
-│ │ ├── ArticleList.jsx
-│ │ └── Article.jsx
-│ ├── data/
-│ │ └── blog.js
-│ ├── components/tests/
-│ │ ├── Header.test.jsx
-│ │ ├── About.test.jsx
-│ │ ├── Article.test.jsx
-│ │ └── ArticleList.test.jsx
-│ ├── App.css
-│ └── main.jsx
-├── package.json
-├── vite.config.js
-└── README.md
-
----
-
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the project
 ```bash
@@ -57,14 +31,13 @@ npm run dev
 Open:
 
 http://localhost:5173/
-🧪 Running Tests
+
+
+## Running Tests
 npm test
 
-Expected result:
 
-✔ 14 tests passing
-
-🎨 Styling
+## Styling
 
 Global styles are in:
 
@@ -77,7 +50,7 @@ Card design for articles
 Styled header and sidebar
 Mobile-friendly design
 
-🧱 Components Overview
+## Components Overview
 App.jsx
 
 Main container that connects all components and passes data.
@@ -105,7 +78,7 @@ Title
 Date (with default fallback)
 Preview text
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 React 18
 Vite
 JavaScript (ES6+)
@@ -113,16 +86,13 @@ CSS3
 Jest
 React Testing Library
 
-🎯 Learning Outcomes
-
-By completing this project, you learned:
-
+## Learning Outcomes
 How React components communicate
 How props work in real applications
 How to prevent errors using default props
 How to test components
 How to structure a React project properly
 
-📄 License
+## License
 
 This project is for educational purposes only.
