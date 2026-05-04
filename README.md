@@ -1,4 +1,6 @@
-# Personal Blog – React Components & Props Lab
+# Personal Blog - React Components & Props Lab
+
+## Description
 
 A simple personal blog built with **React + Vite** to practice component-based architecture, props passing, default props, list rendering, styling, and testing.
 
@@ -6,85 +8,119 @@ A simple personal blog built with **React + Vite** to practice component-based a
 
 ## Features
 
-- Component-based architecture
-- About section with image + description
-- Article list rendered from data
-- Reusable Article components
-- Default fallback values for missing props
-- Responsive design (mobile-friendly)
-- Unit testing with Jest + React Testing Library
+* Component-based architecture
+* About section with image + description
+* Article list rendered from data
+* Reusable Article components
+* Default fallback values for missing props
+* Responsive design (mobile-friendly)
+* Unit testing with Jest + React Testing Library
 
 ---
 
 ## Installation & Setup
-
-### 1. Clone the project
+1. Clone the project
 ```bash
 git clone <your-repo-url>
 cd react-components-props-vite-lab
 
+```
 2. Install dependencies
+
+```bash
 npm install
+
+```
 3. Start development server
+
+```bash
 npm run dev
+
+```
 
 Open:
 
 http://localhost:5173/
 
+--- 
 
-## Running Tests
+### Running Tests
 npm test
 
+---
+## Project Structure
 
-## Styling
+react-components-props-vite-lab/
+├── public/
+│   ├── index.html          # HTML entry point
+│   └── vite.svg            # Vite logo icon
+├── src/
+│   ├── components/
+│   │   ├── App.jsx         # Root component
+│   │   ├── Header.jsx      # Blog title
+│   │   ├── About.jsx       # Blog logo and description
+│   │   ├── ArticleList.jsx # List of articles
+│   │   ├── Article.jsx     # Single article card
+│   │   └── PostDetail.jsx  # Full article page
+│   ├── data/
+│   │   └── blog.js         # Blog content data
+│   ├── __tests__/
+│   │   ├── App.test.jsx
+│   │   ├── Header.test.jsx
+│   │   ├── About.test.jsx
+│   │   ├── Article.test.jsx
+│   │   └── ArticleList.test.jsx
+│   ├── App.css             # Global styles
+│   └── main.jsx            # React entry point
+├── package.json
+├── vite.config.js
+└── README.md
 
-Global styles are in:
+---
 
-src/App.css
+## Technologies
 
-Includes:
+* React 18 – UI library  
+* Vite – Build tool & dev server 
+* React Router – Client-side routing
+* JavaScript (ES6+) – Logic and DOM manipulation  
+* CSS3 – Data retrieval  
+* Jest – Testing framework  
+* React Testing Library – Component testing
 
-Responsive layout
-Card design for articles
-Styled header and sidebar
-Mobile-friendly design
+---
 
-## Components Overview
-App.jsx
+## Component Descriptions
+### App.jsx
+* Purpose: Root component with React Router setup
+* Routes: Home (/) and Post Detail (/post/:id)
+* Imports: Header, About, ArticleList, PostDetail, blogData, App.css
 
-Main container that connects all components and passes data.
+### Header.jsx
+* Purpose: Displays blog title
+* Props: name (string)
 
-Header.jsx
+### About.jsx
+* Purpose: Shows blog logo and description
+* Props: image (string URL), about (string)
+* Default: Placeholder image if none provided
 
-Displays blog title.
+### ArticleList.jsx
+* Purpose: Renders list of all blog posts
+* Props: posts (array)
+* Logic: Maps posts to Article components with unique key props
 
-About.jsx
+### Article.jsx
+* Purpose: Displays single article preview card
+* Props: id, title, date, preview, link (optional)
+* Behavior: External link (if link provided) or internal route
 
-Shows:
+### PostDetail.jsx
+* Purpose: Full article page
+* Props: posts (array)
+* Features: Back button, 404 handling
 
-Blog image
-Description text
-Uses fallback image if none provided
-ArticleList.jsx
-
-Maps through blog posts and renders Article components.
-
-Article.jsx
-
-Displays:
-
-Title
-Date (with default fallback)
-Preview text
-
-## 🛠 Tech Stack
-React 18
-Vite
-JavaScript (ES6+)
-CSS3
-Jest
-React Testing Library
+---
 
 ## Learning Outcomes
 How React components communicate
@@ -93,6 +129,22 @@ How to prevent errors using default props
 How to test components
 How to structure a React project properly
 
+---
+
+## Deployment
+* Vercel (recommended)
+* Github pages
+
+---
+
 ## License
 
 This project is for educational purposes only.
+
+--- 
+
+## Author
+
+Rahab Wanja.
+
+---
