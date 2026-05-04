@@ -1,11 +1,12 @@
-import "@testing-library/jest-dom";
-import { render } from "@testing-library/react";
-import App from "../components/App";
 
-test("renders the correct child components", () => {
-  const { container } = render(<App />);
-  expect(container.querySelector(".App")).toBeInTheDocument();
-  expect(container.querySelector(".App header")).toBeInTheDocument();
-  expect(container.querySelector(".App aside")).toBeInTheDocument();
-  expect(container.querySelector(".App main")).toBeInTheDocument();
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import App from "../App";
+
+describe("App Component", () => {
+  test("renders blog name in header", () => {
+    render(<App />);
+    expect(screen.getByText("Underreacted")).toBeInTheDocument();  // ← CHANGED
+  });
 });

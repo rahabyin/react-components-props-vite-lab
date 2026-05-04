@@ -10,6 +10,7 @@ const blogData = {
       title: "Components 101",
       date: "December 15, 2020",
       preview: "Setting up the building blocks of your site",
+      link: "https://legacy.reactjs.org/docs/components-and-props.html",
       minutes: 5,
     },
     {
@@ -23,6 +24,7 @@ const blogData = {
       id: 3,
       title: "Function vs Class Components",
       preview: "React, meet OOJS.",
+      link: "https://legacy.reactjs.org/docs/components-and-props.html",
       minutes: 47,
     },
   ],

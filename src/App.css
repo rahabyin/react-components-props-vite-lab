@@ -48,7 +48,9 @@ aside {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center; 
   gap: 1.5rem;
 }
 
@@ -58,6 +60,8 @@ aside img {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #019a9d;
+  display: block;              
+  margin: 0 auto;    
 }
 
 aside p {
@@ -106,6 +110,55 @@ article p {
   color: #555;
   font-size: 1rem;
   line-height: 1.6;
+}
+.article-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Post Detail Page Styles */
+.post-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #006b7b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.post-detail h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.post-detail small {
+  display: block;
+  color: #888;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.post-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
 }
 
 /* Responsive design for mobile */

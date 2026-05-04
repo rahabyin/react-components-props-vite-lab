@@ -7,10 +7,12 @@ function ArticleList({ posts }) {
     <main>
       {posts.map((post) => (
         <Article
-          key={post.id}        
+          key={post.id}
+          id={post.id}
           title={post.title}
-          date={post.date}
+          date={post.date || undefined}
           preview={post.preview}
+          link={post.link}  // PASS LINK PROP
         />
       ))}
     </main>

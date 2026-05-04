@@ -1,34 +1,42 @@
+// ArticleList.test.jsx
+// Tests for ArticleList component
+// Wraps component in MemoryRouter because ArticleList renders Articles with <Link>
+
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";  // ← ADD THIS
 import "@testing-library/jest-dom";
-import { render } from "@testing-library/react";
 import ArticleList from "../components/ArticleList";
 
-const posts = [
-  {
-    id: 1,
-    title: "Components 101",
-    date: "December 15, 2020",
-    preview: "Setting up the building blocks of your site",
-  },
-  {
-    id: 2,
-    title: "React Data Flow",
-    date: "December 11, 2020",
-    preview: "Passing props is never passé",
-  },
-  {
-    id: 3,
-    title: "Function Components vs Class Components",
-    date: "December 10, 2020",
-    preview: "React, meet OOJS.",
-  },
-];
+describe("ArticleList Component", () => {
+  const mockPosts = [
+    {
+      id: 1,
+      title: "First Post",
+      date: "May 1, 2026",
+      preview: "Preview one"
+    },
+    {
+      id: 2,
+      title: "Second Post",
+      date: "May 2, 2026",
+      preview: "Preview two"
+    }
+  ];
 
-test("renders a <main> element", () => {
-  const { container } = render(<ArticleList posts={posts} />);
-  expect(container.querySelector("main")).toBeInTheDocument();
-});
+  // Helper function to render with router
+  const renderWithRouter = (component) => {
+    return render(<MemoryRouter>{component}</MemoryRouter>);
+  };
 
-test("renders a Article component for each post passed as a prop", () => {
-  const { container } = render(<ArticleList posts={posts} />);
-  expect(container.querySelector("main").children).toHaveLength(3);
+  test("renders a <main> element", () => {
+    const { container } = renderWithRouter(<ArticleList posts={mockPosts} />);
+    expect(container.querySelector("main")).toBeInTheDocument();
+  });
+
+  test("renders a Article component for each post passed as a prop", () => {
+    renderWithRouter(<ArticleList posts={mockPosts} />);
+    const articles = screen.getAllByRole("article");
+    expect(articles).toHaveLength(2);
+  });
 });
