@@ -51,7 +51,6 @@ npm test
 ## Project Structure
 
 react-components-props-vite-lab/
-
 public/
   * index.html
   * vite.svg
@@ -74,12 +73,12 @@ tests/
   * About.test.jsx
   * Article.test.jsx
   * ArticleList.test.jsx
-  * App.css
-  * main.jsx
-
+App.css
+Main.jsx
 package.json
 vite.config.js
 README.md
+
 ---
 
 ## Technologies
