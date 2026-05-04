@@ -51,31 +51,35 @@ npm test
 ## Project Structure
 
 react-components-props-vite-lab/
-├── public/
-│   ├── index.html          # HTML entry point
-│   └── vite.svg            # Vite logo icon
-├── src/
-│   ├── components/
-│   │   ├── App.jsx         # Root component
-│   │   ├── Header.jsx      # Blog title
-│   │   ├── About.jsx       # Blog logo and description
-│   │   ├── ArticleList.jsx # List of articles
-│   │   ├── Article.jsx     # Single article card
-│   │   └── PostDetail.jsx  # Full article page
-│   ├── data/
-│   │   └── blog.js         # Blog content data
-│   ├── __tests__/
-│   │   ├── App.test.jsx
-│   │   ├── Header.test.jsx
-│   │   ├── About.test.jsx
-│   │   ├── Article.test.jsx
-│   │   └── ArticleList.test.jsx
-│   ├── App.css             # Global styles
-│   └── main.jsx            # React entry point
-├── package.json
-├── vite.config.js
-└── README.md
 
+public/
+  * index.html
+  * vite.svg
+
+src/
+  components/
+   * App.jsx
+   * Header.jsx
+   * About.jsx
+   * ArticleList.jsx
+   * Article.jsx
+   * PostDetail.jsx
+
+data/
+  * blog.js
+
+tests/
+  * App.test.jsx
+  * Header.test.jsx
+  * About.test.jsx
+  * Article.test.jsx
+  * ArticleList.test.jsx
+  * App.css
+  * main.jsx
+
+package.json
+vite.config.js
+README.md
 ---
 
 ## Technologies
@@ -123,11 +127,11 @@ react-components-props-vite-lab/
 ---
 
 ## Learning Outcomes
-How React components communicate
-How props work in real applications
-How to prevent errors using default props
-How to test components
-How to structure a React project properly
+* How React components communicate
+* How props work in real applications
+* How to prevent errors using default props
+* How to test components
+* How to structure a React project properly
 
 ---
 
