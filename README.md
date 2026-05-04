@@ -56,29 +56,28 @@ public/
   * vite.svg
 
 src/
-  components/
-   * App.jsx
-   * Header.jsx
-   * About.jsx
-   * ArticleList.jsx
-   * Article.jsx
-   * PostDetail.jsx
+  * components/
+    * App.jsx
+    * Header.jsx
+    * About.jsx
+    * ArticleList.jsx
+    * Article.jsx
+    * PostDetail.jsx
 
-data/
-  * blog.js
+  * data/
+    * blog.js
 
-tests/
-  * App.test.jsx
-  * Header.test.jsx
-  * About.test.jsx
-  * Article.test.jsx
-  * ArticleList.test.jsx
-  
-App.css
-Main.jsx
-package.json
-vite.config.js
-README.md
+  * tests/
+    * App.test.jsx
+    * Header.test.jsx
+    * About.test.jsx
+    * Article.test.jsx
+    * ArticleList.test.jsx
+  * App.css
+  * Main.jsx
+  * package.json
+  * vite.config.js
+  * README.md
 
 ---
 
