@@ -6,10 +6,10 @@
 // - About
 // - ArticleList
 
-import Header from "./components/Header";
-import About from "./components/About";
-import ArticleList from "./components/ArticleList";
-import blog from "./data/blog";
+import Header from "./Header";
+import About from "./About";
+import ArticleList from "./ArticleList";
+import blog from "../data/blog";
 
 function App() {
   return (
