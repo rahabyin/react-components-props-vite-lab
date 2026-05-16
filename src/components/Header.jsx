@@ -1,9 +1,15 @@
+// src/components/Header.jsx
 
-import React from "react";
+// Header Component
+// Purpose:
+// Displays the blog title.
+//
+// Connected To:
+// - App.jsx
 
 function Header({ name }) {
   return (
-    <header>
+    <header className="header">
       <h1>{name}</h1>
     </header>
   );

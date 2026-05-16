@@ -1,37 +1,23 @@
+// src/components/Article.jsx
 
-import React from "react";
-import { Link } from "react-router-dom";
+// Article Component
+// Displays a single article preview
+// Connected To:
+// - ArticleList.jsx
 
-
-function Article({ id, title, date, preview, link }) {
-  const displayDate = date || "January 1, 1970";
-  // If external link provided, use <a>
-  if (link) {
-    return (
-      <a 
-        href={link} 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="article-link"
-      >
-        <article>
-          <h3>{title}</h3>
-          <small>{displayDate}</small>
-          <p>{preview}</p>
-        </article>
-      </a>
-    );
-  }
-
-  // Otherwise use React Router <Link> for internal pages
+function Article({
+  title,
+  date = "January 1, 1970",
+  preview
+}) {
   return (
-    <Link to={`/post/${id}`} className="article-link">
-      <article>
-        <h3>{title}</h3>
-        <small>{displayDate}</small>
-        <p>{preview}</p>
-      </article>
-    </Link>
+    <article className="article">
+      <h3>{title}</h3>
+
+      <small>{date}</small>
+
+      <p>{preview}</p>
+    </article>
   );
 }
 

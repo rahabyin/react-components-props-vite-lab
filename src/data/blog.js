@@ -1,33 +1,34 @@
-import logo from "../assets/logo";
+// src/data/blog.js
 
-const blogData = {
-  name: "Underreacted",
-  image: logo,
-  about: "A blog about learning React",
+const blog = {
+  name: "Rahab's Tech Blog",
+  image:
+    "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+  about:
+    "Welcome to my personal tech blog where I share coding tutorials, React projects, and web development tips.",
   posts: [
     {
       id: 1,
-      title: "Components 101",
-      date: "December 15, 2020",
-      preview: "Setting up the building blocks of your site",
-      link: "https://legacy.reactjs.org/docs/components-and-props.html",
-      minutes: 5,
+      title: "Getting Started with React",
+      date: "May 16, 2026",
+      preview:
+        "React makes it easy to build interactive user interfaces using reusable components."
     },
     {
       id: 2,
-      title: "React Data Flow",
-      date: "December 11, 2020",
-      preview: "Passing props is never passé",
-      minutes: 15,
+      title: "Why Developers Love JavaScript",
+      date: "May 10, 2026",
+      preview:
+        "JavaScript powers modern web applications and continues to evolve every year."
     },
     {
       id: 3,
-      title: "Function vs Class Components",
-      preview: "React, meet OOJS.",
-      link: "https://legacy.reactjs.org/docs/components-and-props.html",
-      minutes: 47,
-    },
-  ],
+      title: "Understanding Props in React",
+      date: "May 5, 2026",
+      preview:
+        "Props help components communicate with each other and make applications dynamic."
+    }
+  ]
 };
 
-export default blogData;
+export default blog;

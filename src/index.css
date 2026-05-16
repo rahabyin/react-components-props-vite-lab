@@ -2,13 +2,14 @@
  * Imported by App.jsx to style all child components
  */
 
-/* Reset and base styles */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -16,14 +17,17 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Main app container */
+/* Main App Container */
 .App {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Header styles */
+/* ==================================================
+   Header Component Styles
+================================================== */
+
 header {
   background: linear-gradient(135deg, #66ead2 0%, #173d4a 100%);
   color: rgb(225, 245, 249);
@@ -40,17 +44,21 @@ header h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* About section (sidebar) */
+/* ==================================================
+   About Component Styles
+================================================== */
+
 aside {
   background: rgb(231, 250, 251);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; 
+  text-align: center;
   gap: 1.5rem;
 }
 
@@ -60,8 +68,9 @@ aside img {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #019a9d;
-  display: block;              
-  margin: 0 auto;    
+
+  display: block;
+  margin: 0 auto;
 }
 
 aside p {
@@ -70,25 +79,35 @@ aside p {
   line-height: 1.6;
 }
 
-/* Main content area */
+/* ==================================================
+   Article List Component Styles
+================================================== */
+
 main {
   display: grid;
   gap: 1.5rem;
 }
 
-/* Individual article cards */
-article {
+/* ==================================================
+   Article Component Styles
+================================================== */
 
-  background: rgb(231, 250, 251); 
+article {
+  background: rgb(231, 250, 251);
   padding: 1.5rem;
   border-radius: 8px;
+
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
   border-left: 4px solid #019a9d;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
 }
 
 article:hover {
   transform: translateY(-2px);
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -111,26 +130,37 @@ article p {
   font-size: 1rem;
   line-height: 1.6;
 }
+
+/* Optional Article Link Styling */
+
 .article-link {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-/* Post Detail Page Styles */
+/* ==================================================
+   Post Detail Page Styles (Optional)
+================================================== */
+
 .post-detail {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+
   background: white;
+
   border-radius: 8px;
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .back-link {
   display: inline-block;
   margin-bottom: 1.5rem;
+
   color: #006b7b;
+
   text-decoration: none;
   font-weight: 500;
 }
@@ -161,21 +191,24 @@ article p {
   margin-bottom: 1.5rem;
 }
 
-/* Responsive design for mobile */
+/* ==================================================
+   Responsive Design
+================================================== */
+
 @media (max-width: 768px) {
   .App {
     padding: 10px;
   }
-  
+
   header h1 {
     font-size: 1.8rem;
   }
-  
+
   aside {
     flex-direction: column;
     text-align: center;
   }
-  
+
   aside img {
     width: 100px;
     height: 100px;

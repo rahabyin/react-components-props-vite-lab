@@ -1,18 +1,24 @@
+// src/components/ArticleList.jsx
 
-import React from "react";
+// ArticleList Component
+// Purpose:
+// Displays all blog articles.
+//
+// Connected To:
+// - App.jsx
+// - Article.jsx
+
 import Article from "./Article";
 
 function ArticleList({ posts }) {
   return (
-    <main>
+    <main className="article-list">
       {posts.map((post) => (
         <Article
           key={post.id}
-          id={post.id}
           title={post.title}
-          date={post.date || undefined}
+          date={post.date}
           preview={post.preview}
-          link={post.link}  // PASS LINK PROP
         />
       ))}
     </main>

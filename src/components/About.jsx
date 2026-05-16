@@ -1,13 +1,18 @@
+// src/components/About.jsx
 
-import React from "react";
+// About Component
+// Displays blog information and image
+// Connected To:
+// - App.jsx
 
-function About({ 
+function About({
   image = "https://via.placeholder.com/215",
-  about 
+  about
 }) {
   return (
     <aside>
       <img src={image} alt="blog logo" />
+
       <p>{about}</p>
     </aside>
   );
